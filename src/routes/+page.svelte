@@ -145,18 +145,18 @@
     </nav>
     <div id="main">
         <div id="a">
-            <div class="list">
+            <a href="/Appetizers"><div class="list">
                 <img alt="1" src="{categories.mockCategory01.picture}" />
                 <p>{categories.mockCategory01.name}</p>
-            </div>
-            <div class="list">
+            </div></a>
+            <a href="/Meat Pasta"><div class="list">
                 <img alt="2" src="{categories.mockCategory02.picture}" /> 
                 <p>{categories.mockCategory02.name}</p>
-            </div>
-            <div class="list">
+            </div></a>
+            <a href="/Wine"><div class="list">
                 <img alt="3" src="{categories.mockCategory03.picture}" /> 
                 <p>{categories.mockCategory03.name}</p>
-            </div>
+            </div></a>
             <div class="list">
                 <img alt="4" src="{categories.mockCategory04.picture}" /> 
                 <p>{categories.mockCategory04.name}</p>
@@ -227,7 +227,6 @@ a { text-decoration: none; color:inherit; }
 li { list-style: none; }
 img { vertical-align: top; border: none; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-address { font-style: normal; }
 
     #wrap{
         width: 100%;
