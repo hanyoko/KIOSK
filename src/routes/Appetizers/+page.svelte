@@ -44,90 +44,77 @@
 }
 </script>
 
-
-<div id="wrap">
-    <nav id="nav">
-        <li class="li" style="width: 17%">English<img src="./status/img/chevron-down.png" alt=""></li>
-        <li class="li" style="width: 24%">Call Waiter</li>
-        <li class="li" style="width: 24%">View Bill</li>
-        <li class="li" style="width: 24%">My Cart</li>
-        <li style="width: 11%">0</li>
-    </nav>
-
     <div id="main">
         <div id="nav2">
             <a href="/"><p>←</p></a>
             <h1>Appetizer</h1>
             <h2> · Salad and Fries</h2>
         </div>
+
         <div id="a">
             <div class="list">
                 <img alt="" src="{products.appetizer01.picture}" />
                 <p>{products.appetizer01.name}</p>
-                <p>{products.appetizer01.price}</p>
+                <p>${products.appetizer01.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer02.picture}" /> 
                 <p>{products.appetizer02.name}</p>
-                <p>{products.appetizer01.price}</p>
+                <p>${products.appetizer02.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer03.picture}" /> 
                 <p>{products.appetizer03.name}</p>
-                <p>{products.appetizer01.price}</p>
+                <p>${products.appetizer03.price*0.01}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.appetizer04.picture}" /> 
                 <p>{products.appetizer04.name}</p>
-                <p>{products.appetizer01.price}</p>
+                <p>${products.appetizer04.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer05.picture}" /> 
                 <p>{products.appetizer05.name}</p>
-                <p>{products.appetizer01.price}</p>
+                <p>${products.appetizer05.price*0.01}</p>
             </div>
-            <div class="list">
-                <!-- <img alt="" src="{products.appetizer06.picture}" />  -->
-                <p>{products.appetizer06.name}</p>
-                <p>{products.appetizer01.price}</p>
+            <div class="list six">
+                <p style="font-size: 30px; color: white;">{products.appetizer06.name}</p>
+                <div class="six2">
+                    <p class="cheese">{products.appetizer06.name}</p>
+                    <p>${products.appetizer06.price*0.01}</p>
+                </div>
+                
             </div>
         </div>
     </div>
-</div>
 
 <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; } 
     a { text-decoration: none; color:inherit; }
     li { list-style: none; }
     img { vertical-align: top; border: none; }
     h1, h2 { font-weight: normal; }
     
-        #wrap{
-            width: 100%;
-        }
-        #nav{
-            line-height: 80px;
-            font-size: 35px;
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            align-items: center;
-            background: black;
-            color: white;
-            width: 100%;
-        }
-        .li {
-            border-right: 1px dotted gray;
-        }
         #nav2{
             display: flex;
             text-align: center;
             align-items: center;
+            margin-bottom: 30px;
         }
         #nav2 h1{
             padding: 0 20px;
+        }
+        #nav2 a{
+            width: 80px;
+            height: 50px;
+            font-size: 30px;
+            /* background: gainsboro; */
+            text-align: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgb(228, 226, 226);
         }
 
         #main {
@@ -140,19 +127,37 @@
         #a, #b{
             width: 100%;
             display: flex;
+            justify-content: space-around;
         }
         .list {
-            /* margin: 25px 0; */
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
-            border-radius: 10%;
+            width: 30%;
+            height: 300px;
+            margin-bottom: 230px;
+         
+        }
+        .list img {
             width: 100%;
+            height: 350px;
+            border-radius: 30px;
         }
         .list p {
-            margin: 30px 0;
-            padding-top: 180px;
             font-size: 30px;
+            padding: 10px 0;
+            margin-top: 3px;
         }
+        .six {
+            height: 350px;
+            background: rgb(204, 200, 200);
+            border-radius: 30px;
+            text-align: start !important; 
+            
+        }
+        .list .six2 {
+          position: absolute;
+        }
+        
     </style>

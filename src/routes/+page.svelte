@@ -136,13 +136,7 @@
 </script>
 
 <div id="wrap">
-    <nav id="nav">
-        <li class="li" style="width: 17%">English<img src="./status/img/chevron-down.png" alt=""></li>
-        <li class="li" style="width: 24%">Call Waiter</li>
-        <li class="li" style="width: 24%">View Bill</li>
-        <li class="li" style="width: 24%">My Cart</li>
-        <li style="width: 11%">0</li>
-    </nav>
+
     <div id="main">
         <div id="a">
             <a href="/Appetizers"><div class="list">
@@ -230,23 +224,6 @@ img { vertical-align: top; border: none; }
 
     #wrap{
         width: 100%;
-    }
-    #nav{
-        line-height: 80px;
-        font-size: 35px;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        align-items: center;
-        background: black;
-        color: white;
-        width: 100%;
-    }
-    /* li {
-        width: 25%;
-    } */
-    .li {
-        border-right: 1px dotted gray;
     }
     #main {
         width: 100%;
