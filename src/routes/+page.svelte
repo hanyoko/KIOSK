@@ -226,7 +226,7 @@
 a { text-decoration: none; color:inherit; }
 li { list-style: none; }
 img { vertical-align: top; border: none; }
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+/* h1, h2, h3, h4, h5, h6 { font-weight: normal; } */
 
     #wrap{
         width: 100%;
