@@ -1,5 +1,5 @@
 <script>
-    const categoryOrder = [
+const categoryOrder = [
         'mockCategory01',
         'mockCategory02',
         'mockCategory03',
@@ -218,7 +218,6 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 a { text-decoration: none; color:inherit; }
-li { list-style: none; }
 img { vertical-align: top; border: none; }
 /* h1, h2, h3, h4, h5, h6 { font-weight: normal; } */
 

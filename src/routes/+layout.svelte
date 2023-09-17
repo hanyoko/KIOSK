@@ -26,16 +26,15 @@
             <img alt="" src={call} />Call Waiter
         </button>
     </li>
-    <li class="li bill" style="width: 24%"><img alt="" src={bill} />View Bill</li>
-    <li class="li cart" style="width: 24%"><img alt="" src={cart} />My Cart<p>0</p></li>
-    <li class="table" style="width: 11%"><img alt="" src={table} />{tableNumber}</li>
+    <li class="li bill" style="width: 24%; color: gray;"><img alt="" src={bill} />View Bill</li>
+    <li class="li cart" style="width: 24%; color: gray;"><img alt="" src={cart} />My Cart<p style="color: white;">0</p></li>
+    <li class="table" style="width: 11%; font-size: 40px; font-weight: bold;"><img alt="" src={table} />{tableNumber}</li>
 </nav>
 
 <slot></slot>
 
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    a { text-decoration: none; color:inherit; }
     li { list-style: none; }
     img { vertical-align: middle; border: none; }
     
@@ -74,10 +73,7 @@
         border-radius: 100%;
         background-color: gray;
     }
-    #nav .call{
-        
-    }
     .li {
-        border-right: 1px dotted gray;
+        border-right: 1px solid gray;
     }
 </style>
