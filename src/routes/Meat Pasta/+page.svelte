@@ -113,9 +113,11 @@
                 <p>${products.meatPasta07.price*0.01}</p>
             </div>
             <div class="list">
-                <img alt="" src="{products.meatPasta05.picture}" /> 
+                <img alt="" src="{products.meatPasta08.picture}" /> 
                 <p>{products.meatPasta08.name}</p>
                 <p>${products.meatPasta08.price*0.01}</p>
+            </div>
+            <div class="list">
             </div>
         </div>
     </div>

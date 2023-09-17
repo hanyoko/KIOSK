@@ -211,6 +211,7 @@ const categoryOrder = [
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -218,7 +219,7 @@ const categoryOrder = [
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 a { text-decoration: none; color:inherit; }
-img { vertical-align: top; border: none; }
+img { vertical-align: middle; border: none; }
 /* h1, h2, h3, h4, h5, h6 { font-weight: normal; } */
 
     #wrap{

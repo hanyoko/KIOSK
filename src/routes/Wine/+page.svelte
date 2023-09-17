@@ -65,7 +65,11 @@
                 <img alt="" src="{products.wine04.picture}" /> 
                 <p>{products.wine04.name}</p>
                 <p>${products.wine04.price*0.01}</p>
+            </div>
+            <div class="list">
             </div>  
+            <div class="list">
+            </div>    
         </div>
     </div>
 

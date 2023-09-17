@@ -14,21 +14,21 @@
 </script>
 
 <nav id="nav">
-    <li class="li lan" style="width: 17%;">
+    <li class="li lan">
     <!-- <select id="languageSelector" class="li" style="width: 17%">
         <option value="en">English</option>
         <option value="ko" selected>한국어</option>
     </select>-->
     English<img alt="" src={lan} />
     </li> 
-    <li class="li call" style="width: 24%">
-        <button on:click={handleAlert}>
+    <li class="li call">
+        <button style="cursor: pointer;" on:click={handleAlert}>
             <img alt="" src={call} />Call Waiter
         </button>
     </li>
-    <li class="li bill" style="width: 24%; color: gray;"><img alt="" src={bill} />View Bill</li>
-    <li class="li cart" style="width: 24%; color: gray;"><img alt="" src={cart} />My Cart<p style="color: white;">0</p></li>
-    <li class="table" style="width: 11%; font-size: 40px; font-weight: bold;"><img alt="" src={table} />{tableNumber}</li>
+    <li class="li bill"><img alt="" src={bill} />View Bill</li>
+    <li class="li cart"><img alt="" src={cart} />My Cart<p style="color: white;">0</p></li>
+    <li class="table"><img alt="" src={table} />{tableNumber}</li>
 </nav>
 
 <slot></slot>
@@ -63,15 +63,32 @@
         color: white;
         border: none;
     }
+    #nav .lan {
+        width: 17%;
+    }
+    #nav .call {
+        width: 24%;
+    }
+    #nav .bill {
+        width: 24%;
+        color: gray;
+    }
     #nav .cart {
         display: flex;
         justify-content: center;
+        width: 24%;
+        color: gray;
     }
     #nav .cart p{
         width: 40px;
         margin: 0 15px;
         border-radius: 100%;
         background-color: gray;
+    }
+    #nav .table {
+        width: 11%;
+        font-size: 40px; 
+        font-weight: bold;
     }
     .li {
         border-right: 1px solid gray;
