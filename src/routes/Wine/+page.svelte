@@ -131,4 +131,7 @@
             padding: 10px 0;
             margin-top: 3px;
         }
+        .list .price{
+            color: gray;
+        }
     </style>
