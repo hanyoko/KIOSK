@@ -48,10 +48,11 @@
     }
 </script>
 
+<section>
     <div id="main">
         <div id="nav2">
             <a id="back" href="/"><p>←</p></a>
-            <h1 style="padding: 0 30px;">Appetizer</h1>
+            <h1 style="font-size: 40px; font-weight: bold; padding: 0 30px;">Appetizer</h1>
             <h2 style="padding-right: 30px; font-weight: 500; color: gray;">·</h2>
             <h2 style="font-weight: 500; color: gray;">Salad and Fries</h2>
         </div>
@@ -85,13 +86,14 @@
                 <p class="price">${products.appetizer05.price*0.01}</p>
             </div>
             <div class="list">
-                <img id="cheeseImg" alt="Cheese Stick" style="font-size: 30px; color: white; font-style: bold;" src="{products.default.picture}" /> 
+                <img id="cheeseImg" alt="" src="{products.default.picture}" /> 
                 <p class="cheese">Cheese Stick</p>
                 <p>{products.appetizer06.name}</p>
                 <p class="price">${products.appetizer06.price*0.01}</p>
             </div>
         </div>
     </div>
+</section>
 
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; } 
@@ -134,17 +136,15 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
-            width: 30%;
-            height: 300px;
-            margin-bottom: 170px;
-         
+            width: 29%;
+            height: 360px;
+            margin-bottom: 100px;
         }
         .list img {
             width: 100%;
-            height: 310px !important;
+            height: 300px !important;
             border-radius: 10px;
             object-fit: fill;
-            
         }
         .list p {
             font-size: 30px;
@@ -159,10 +159,10 @@
         }
         .cheese {
             position: absolute;
-            bottom: 19%;
-            right: 16%;
+            bottom: 20%;
+            right: 17%;
             color: white;
             font-weight: bold;
-            font-size: 50px !important;
+            font-size: 43px !important;
         }
     </style>

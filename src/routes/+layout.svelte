@@ -1,8 +1,7 @@
 <script>
-    const languages = [{name: 'English'}, {name: '한국어'}]
     const tableNumber = '12'
 
-    import lan from '$lib/img/chevron-down.png';
+    // import lan from '$lib/img/chevron-down.png';
     import call from '$lib/img/notifications_active.png';
     import bill from '$lib/img/receipt.png';
     import cart from '$lib/img/shopping_cart.png';
@@ -11,15 +10,18 @@
     function handleAlert() {
         alert("Waiter Called");
     }
+
 </script>
 
 <nav id="nav">
     <li class="li lan">
-    <!-- <select id="languageSelector" class="li" style="width: 17%">
-        <option value="en">English</option>
-        <option value="ko" selected>한국어</option>
-    </select>-->
-    English<img alt="" src={lan} />
+        <select id="languageSelector">
+            <option value="en" selected>English</option>
+            <option value="ko" >한국어</option>
+            <option value="ja" >にほんご</option>
+            <option value="ch" >中國語</option>
+        </select>
+        <!-- <img alt="" src={lan} /> -->
     </li> 
     <li class="li call">
         <button style="cursor: pointer;" on:click={handleAlert}>
@@ -27,7 +29,7 @@
         </button>
     </li>
     <li class="li bill"><img alt="" src={bill} />View Bill</li>
-    <li class="li cart"><img alt="" src={cart} />My Cart<p style="color: white;">0</p></li>
+    <li class="li cart"><img alt="" src={cart} />My Cart<span class="circle">0</span></li>
     <li class="table"><img alt="" src={table} />{tableNumber}</li>
 </nav>
 
@@ -51,10 +53,11 @@
     }
     #nav li {
         align-items: center;
+        height: 40px;
     }
     #nav img {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         margin: 0 15px;
     }
     #nav button {
@@ -64,8 +67,18 @@
         border: none;
     }
     #nav .lan {
-        width: 17%;
+        width: 16%;
     }
+    #languageSelector {
+        font-size: 27px;
+        border: 0;
+        background-color: black;
+        color: white;
+        width: 70%;
+        height: 40px;
+        text-align: center;
+    }
+
     #nav .call {
         width: 24%;
     }
@@ -79,15 +92,17 @@
         width: 24%;
         color: gray;
     }
-    #nav .cart p{
+    #nav .cart .circle{
         width: 40px;
-        margin: 0 15px;
-        border-radius: 100%;
+        height: 40px;
+        margin-left: 10px; 
+        border-radius: 50%;
         background-color: gray;
+        color: white;
     }
     #nav .table {
-        width: 11%;
-        font-size: 40px; 
+        width: 12%;
+        font-size: 30px; 
         font-weight: bold;
     }
     .li {

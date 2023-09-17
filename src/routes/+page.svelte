@@ -1,5 +1,5 @@
 <script>
-const categoryOrder = [
+    const categoryOrder = [
         'mockCategory01',
         'mockCategory02',
         'mockCategory03',
@@ -16,9 +16,9 @@ const categoryOrder = [
         'mockCategory14',
         'mockCategory15',
         'mockCategory16',
-    ]
+    ];
 
-    const categories = {
+    export const categories = {
         mockCategory01: {
             description: 'Salad and fries',
             id: 'mockCategory01',
@@ -135,8 +135,7 @@ const categoryOrder = [
     }
 </script>
 
-<div id="wrap">
-
+<section id="wrap">
     <div id="main">
         <div id="a">
             <a href="/Appetizers"><div class="list">
@@ -211,8 +210,7 @@ const categoryOrder = [
             </div>
         </div>
     </div>
-
-</div>
+</section>
 
 
 

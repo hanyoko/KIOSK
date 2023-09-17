@@ -64,10 +64,11 @@
     }
 </script>
 
+<section>
     <div id="main">
         <div id="nav2">
             <a id="back" href="/"><p>←</p></a>
-            <h1 style="padding: 0 30px;">Meat Pasta</h1>
+            <h1 style="font-size: 40px; font-weight: bold; padding: 0 30px;">Meat Pasta</h1>
             <h2 style="padding-right: 30px; font-weight: 500; color: gray;">·</h2>
             <h2 style="font-weight: 500; color: gray;">Pasta and Fries</h2>
         </div>
@@ -121,6 +122,7 @@
             </div>
         </div>
     </div>
+</section>
 
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; } 
@@ -163,17 +165,15 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
-            width: 30%;
-            height: 300px;
-            margin-bottom: 170px;
-         
+            width: 29%;
+            height: 360px;
+            margin-bottom: 100px;
         }
         .list img {
             width: 100%;
-            height: 310px !important;
+            height: 300px !important;
             border-radius: 10px;
             object-fit: fill;
-            
         }
         .list p {
             font-size: 30px;
