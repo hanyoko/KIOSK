@@ -47,24 +47,24 @@
             <div class="list">
                 <img alt="" src="{products.wine01.picture}" />
                 <p>{products.wine01.name}</p>
-                <p>${products.wine01.price*0.01}</p>
+                <p class="price">${products.wine01.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine02.picture}" /> 
                 <p>{products.wine02.name}</p>
-                <p>${products.wine02.price*0.01}</p>
+                <p class="price">${products.wine02.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine03.picture}" /> 
                 <p>{products.wine03.name}</p>
-                <p>${products.wine03.price*0.01}</p>
+                <p class="price">${products.wine03.price*0.01}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.wine04.picture}" /> 
                 <p>{products.wine04.name}</p>
-                <p>${products.wine04.price*0.01}</p>
+                <p class="price">${products.wine04.price*0.01}</p>
             </div>
             <div class="list">
             </div>  

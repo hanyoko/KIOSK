@@ -76,46 +76,46 @@
             <div class="list">
                 <img alt="" src="{products.meatPasta01.picture}" />
                 <p>{products.meatPasta01.name}</p>
-                <p>${products.meatPasta01.price*0.01}</p>
+                <p class="price">${products.meatPasta01.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta02.picture}" /> 
                 <p>{products.meatPasta02.name}</p>
-                <p>${products.meatPasta02.price*0.01}</p>
+                <p class="price">${products.meatPasta02.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta03.picture}" /> 
                 <p>{products.meatPasta03.name}</p>
-                <p>${products.meatPasta03.price*0.01}</p>
+                <p class="price">${products.meatPasta03.price*0.01}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.meatPasta04.picture}" /> 
                 <p>{products.meatPasta04.name}</p>
-                <p>${products.meatPasta04.price*0.01}</p>
+                <p class="price">${products.meatPasta04.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta05.picture}" /> 
                 <p>{products.meatPasta05.name}</p>
-                <p>${products.meatPasta05.price*0.01}</p>
+                <p class="price">${products.meatPasta05.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta06.picture}" /> 
                 <p>{products.meatPasta06.name}</p>
-                <p>${products.meatPasta06.price*0.01}</p>
+                <p class="price">${products.meatPasta06.price*0.01}</p>
             </div>
         </div>
         <div id="c">
             <div class="list">
                 <img alt="" src="{products.meatPasta07.picture}" /> 
                 <p>{products.meatPasta07.name}</p>
-                <p>${products.meatPasta07.price*0.01}</p>
+                <p class="price">${products.meatPasta07.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta08.picture}" /> 
                 <p>{products.meatPasta08.name}</p>
-                <p>${products.meatPasta08.price*0.01}</p>
+                <p class="price">${products.meatPasta08.price*0.01}</p>
             </div>
             <div class="list">
             </div>
@@ -179,5 +179,8 @@
             font-size: 30px;
             padding: 10px 0;
             margin-top: 3px;
+        }
+        .list .price{
+            color: gray;
         }
     </style>

@@ -60,35 +60,35 @@
             <div class="list">
                 <img alt="" src="{products.appetizer01.picture}" />
                 <p>{products.appetizer01.name}</p>
-                <p>${products.appetizer01.price*0.01}</p>
+                <p class="price">${products.appetizer01.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer02.picture}" /> 
                 <p>{products.appetizer02.name}</p>
-                <p>${products.appetizer02.price*0.01}</p>
+                <p class="price">${products.appetizer02.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer03.picture}" /> 
                 <p>{products.appetizer03.name}</p>
-                <p>${products.appetizer03.price*0.01}</p>
+                <p class="price">${products.appetizer03.price*0.01}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.appetizer04.picture}" /> 
                 <p>{products.appetizer04.name}</p>
-                <p>${products.appetizer04.price*0.01}</p>
+                <p class="price"p>${products.appetizer04.price*0.01}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer05.picture}" /> 
                 <p>{products.appetizer05.name}</p>
-                <p>${products.appetizer05.price*0.01}</p>
+                <p class="price">${products.appetizer05.price*0.01}</p>
             </div>
             <div class="list">
                 <img id="cheeseImg" alt="Cheese Stick" style="font-size: 30px; color: white; font-style: bold;" src="{products.default.picture}" /> 
                 <p class="cheese">Cheese Stick</p>
                 <p>{products.appetizer06.name}</p>
-                <p>${products.appetizer06.price*0.01}</p>
+                <p class="price">${products.appetizer06.price*0.01}</p>
             </div>
         </div>
     </div>
@@ -150,6 +150,9 @@
             font-size: 30px;
             padding: 10px 0;
             margin-top: 3px;
+        }
+        .list .price {
+            color: gray;
         }
         #cheeseImg{
             position: relative !important;
