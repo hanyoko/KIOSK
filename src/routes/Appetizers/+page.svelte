@@ -157,9 +157,6 @@
             height: 400px;
             margin-bottom: 100px;
         }
-        .list .name {
-            font-weight: bold;
-        }
         .list img {
             width: 100%;
             height: 350px !important;
@@ -244,16 +241,22 @@
             #nav2 .title {
                 font-size: 2rem;
                 font-weight: bold;
-                padding: 0 1rem;
+                padding: 0 1.8rem;
             }
             #nav2 .dot {
-                font-weight: 500;
-                color: gray;
+                font-size: 0;
             }
             #nav2 .subtitle{
-                font-size: 1.4rem;
-                font-weight: 500;
-                color: gray;
+                font-size: 0;
+            }
+            #nav2 .dot {
+                font-size: 0;
+            }
+            #nav2 .subtitle{
+                font-size: 0;
+            }
+            .list .name {
+                font-weight: bold;
             }
         }
     </style>

@@ -148,9 +148,6 @@
         .list .price{
             color: gray;
         }
-        .list .name {
-            font-weight: bold;
-        }
 
         @media screen and (max-width:1199px) {
         /* 테블릿 가로 */
@@ -202,20 +199,26 @@
             #nav2 .title {
                 font-size: 2rem;
                 font-weight: bold;
-                padding: 0 1rem;
+                padding: 0 1.8rem;
             }
             #nav2 .dot {
-                font-weight: 500;
-                color: gray;
+                font-size: 0;
             }
             #nav2 .subtitle{
-                font-size: 1.4rem;
-                font-weight: 500;
-                color: gray;
+                font-size: 0;
+            }
+            #nav2 .dot {
+                font-size: 0;
+            }
+            #nav2 .subtitle{
+                font-size: 0;
             }
 
             .blank {
                 display: none;
+            }
+            .list .name {
+                font-weight: bold;
             }
         }
     </style>
