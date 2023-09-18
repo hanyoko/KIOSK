@@ -78,6 +78,7 @@
         width: 70%;
         height: 40px;
         text-align: center;
+        cursor: pointer;
     }
 
     #nav .call {
