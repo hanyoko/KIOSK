@@ -192,7 +192,7 @@
     @media screen and (max-width:899px) {
     /* 모바일 가로, 테블릿 세로 */
         .list img {
-            height: 400px !important;
+            height: 80% !important;
         }
         .cheese {
             font-size: 2rem !important;
@@ -228,7 +228,7 @@
             margin-bottom: 80px;
         }
         .cheese {
-            font-size: 3rem !important;
+            font-size: 2.5rem !important;
         }
         #nav2 a {
             width: 70px;

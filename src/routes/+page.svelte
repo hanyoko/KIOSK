@@ -119,18 +119,24 @@
 <section id="wrap">
     <div id="main">
         <div id="a">
-            <a href="/Appetizers"><div class="list">
-                <img alt="" src="{categories.mockCategory01.picture}" />
-                <p>{categories.mockCategory01.name}</p>
-            </div></a>
-            <a href="/Meat_Pasta"><div class="list">
-                <img alt="" src="{categories.mockCategory02.picture}" /> 
-                <p>{categories.mockCategory02.name}</p>
-            </div></a>
-            <a href="/Wine"><div class="list">
-                <img alt="" src="{categories.mockCategory03.picture}" /> 
-                <p>{categories.mockCategory03.name}</p>
-            </div></a>
+            <a href="/Appetizers" class="list">
+                <div>
+                    <img alt="" src="{categories.mockCategory01.picture}" />
+                    <p>{categories.mockCategory01.name}</p>
+                </div>
+            </a>
+            <a href="/Meat_Pasta" class="list">
+                <div>
+                    <img alt="" src="{categories.mockCategory02.picture}" /> 
+                    <p>{categories.mockCategory02.name}</p>
+                </div>
+            </a>
+            <a href="/Wine" class="list">
+                <div>
+                    <img alt="" src="{categories.mockCategory03.picture}" /> 
+                    <p>{categories.mockCategory03.name}</p>
+                </div>
+            </a>
             <div class="list">
                 <img alt="" src="{categories.mockCategory04.picture}" /> 
                 <p>{categories.mockCategory04.name}</p>
@@ -215,9 +221,13 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        margin-bottom: 3rem;
     }
+    #a {
+        margin-top: 20px;
+    }
+
     .list {
-        /* width: 20%; */
         margin: 25px 0;
         background: rgb(247, 240, 240);
         display: flex;
@@ -225,32 +235,39 @@
         text-align: center;
         align-items: center;
         border-radius: 10%;
-        width: 300px;
-        height: 300px;
+        width: 20%;
+        height: 90%;
         position: relative;
     }
     .list img {
         border: 1;
         border-radius: 100%;
-        width: 200px;
-        height: 200px;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
         position: absolute;
         top: -8%;
-        left: 17%;
+        left: 15%;
     }
     .list p {
         margin: 30px 0;
-        padding-top: 180px;
+        padding-top: 200px;
         font-size: 30px;
         font-weight: bold;
     }
 
     @media screen and (max-width:1199px) {
     /* 테블릿 가로 */
+        #a, #b, #c, #d{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0;
+        }
         .list {
-            width: 250px;
-            height: 250px;
+            width: 21%;
+            height: 83%;
+            margin: 0;
         }
         .list img {
             width: 70%;
@@ -259,7 +276,8 @@
             left: 15%;
         }
         .list p {
-            padding-top: 150px;
+            padding-top: 100px;
+            padding-bottom: 40px;
             font-size: 25px;
             font-weight: bold;
         }
@@ -268,8 +286,8 @@
     @media screen and (max-width:899px) {
     /* 모바일 가로, 테블릿 세로 */
         .list {
-            width: 170px;
-            height: 170px;
+            width: 21%;
+            height: 88%;
         }
         .list img {
             width: 70%;
@@ -278,9 +296,9 @@
             left: 15%;
         }
         .list p {
-            margin: 30px 0;
             padding-top: 90px;
-            font-size: 18px;
+            padding-bottom: 10px;
+            font-size: 19px;
             font-weight: bold;
         }
     }
@@ -290,10 +308,14 @@
         #a, #b, #c, #d {
             flex-direction: column;
         }
+        #a {
+            margin-top: 0;
+        }
         .list {
             text-align: center;
             width: 100%;
-            height: 35vh;
+            height: 50%;
+            margin: 40px 0;
         }
         .list img {
             border-radius: 8%;
