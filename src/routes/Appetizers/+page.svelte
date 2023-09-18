@@ -1,4 +1,6 @@
 <script>
+    import defaultPic from '$lib/img/gray.jpg';
+
     const products = {
         appetizer01: {
             description: 'Romain lettuce and croutons with caesar dressing.',
@@ -42,10 +44,11 @@
             price: 700,
         },
                 
-        default: {
-            picture: 'https://windowsforum.kr/files/attach/images/2966154/176/607/019/87649558142f291ae09689066ee8f2fc.jpg',
-        }
+        // default: {
+        //     picture: '',
+        // }
     }
+
 </script>
 
 <section>
@@ -61,35 +64,35 @@
             <div class="list">
                 <img alt="" src="{products.appetizer01.picture}" />
                 <p>{products.appetizer01.name}</p>
-                <p class="price">${products.appetizer01.price*0.01}</p>
+                <p class="price">${(products.appetizer01.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer02.picture}" /> 
                 <p>{products.appetizer02.name}</p>
-                <p class="price">${products.appetizer02.price*0.01}</p>
+                <p class="price">${(products.appetizer02.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer03.picture}" /> 
                 <p>{products.appetizer03.name}</p>
-                <p class="price">${products.appetizer03.price*0.01}</p>
+                <p class="price">${(products.appetizer03.price*0.01).toFixed(2)}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.appetizer04.picture}" /> 
                 <p>{products.appetizer04.name}</p>
-                <p class="price"p>${products.appetizer04.price*0.01}</p>
+                <p class="price"p>${(products.appetizer04.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.appetizer05.picture}" /> 
                 <p>{products.appetizer05.name}</p>
-                <p class="price">${products.appetizer05.price*0.01}</p>
+                <p class="price">${(products.appetizer05.price*0.01).toFixed(2)}</p>
             </div>
-            <div class="list">
-                <img id="cheeseImg" alt="" src="{products.default.picture}" /> 
+            <div id="cheeseImg" class="list">
+                <img alt="" src="{defaultPic}" /> 
                 <p class="cheese">Cheese Stick</p>
                 <p>{products.appetizer06.name}</p>
-                <p class="price">${products.appetizer06.price*0.01}</p>
+                <p class="price">${(products.appetizer06.price*0.01).toFixed(2)}</p>
             </div>
         </div>
     </div>
@@ -137,12 +140,12 @@
             text-align: center;
             align-items: center;
             width: 29%;
-            height: 360px;
+            height: 400px;
             margin-bottom: 100px;
         }
         .list img {
             width: 100%;
-            height: 300px !important;
+            height: 350px !important;
             border-radius: 10px;
             object-fit: fill;
         }
@@ -159,10 +162,10 @@
         }
         .cheese {
             position: absolute;
-            bottom: 20%;
-            right: 17%;
+            top: 0%;
+            left: 5%;
             color: white;
             font-weight: bold;
-            font-size: 43px !important;
+            font-size: 3rem !important;
         }
     </style>

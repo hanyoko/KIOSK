@@ -1,24 +1,5 @@
 <script>
-    const categoryOrder = [
-        'mockCategory01',
-        'mockCategory02',
-        'mockCategory03',
-        'mockCategory04',
-        'mockCategory05',
-        'mockCategory06',
-        'mockCategory07',
-        'mockCategory08',
-        'mockCategory09',
-        'mockCategory10',
-        'mockCategory11',
-        'mockCategory12',
-        'mockCategory13',
-        'mockCategory14',
-        'mockCategory15',
-        'mockCategory16',
-    ];
-
-    export const categories = {
+    const categories = {
         mockCategory01: {
             description: 'Salad and fries',
             id: 'mockCategory01',
@@ -139,73 +120,73 @@
     <div id="main">
         <div id="a">
             <a href="/Appetizers"><div class="list">
-                <img alt="1" src="{categories.mockCategory01.picture}" />
+                <img alt="" src="{categories.mockCategory01.picture}" />
                 <p>{categories.mockCategory01.name}</p>
             </div></a>
-            <a href="/Meat Pasta"><div class="list">
-                <img alt="2" src="{categories.mockCategory02.picture}" /> 
+            <a href="/Meat_Pasta"><div class="list">
+                <img alt="" src="{categories.mockCategory02.picture}" /> 
                 <p>{categories.mockCategory02.name}</p>
             </div></a>
             <a href="/Wine"><div class="list">
-                <img alt="3" src="{categories.mockCategory03.picture}" /> 
+                <img alt="" src="{categories.mockCategory03.picture}" /> 
                 <p>{categories.mockCategory03.name}</p>
             </div></a>
             <div class="list">
-                <img alt="4" src="{categories.mockCategory04.picture}" /> 
+                <img alt="" src="{categories.mockCategory04.picture}" /> 
                 <p>{categories.mockCategory04.name}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
-                <img alt="5" src="{categories.mockCategory05.picture}" /> 
+                <img alt="" src="{categories.mockCategory05.picture}" /> 
                 <p>{categories.mockCategory05.name}</p>
             </div>
             <div class="list">
-                <img alt="6" src="{categories.mockCategory06.picture}" /> 
+                <img alt="" src="{categories.mockCategory06.picture}" /> 
                 <p>{categories.mockCategory06.name}</p>
             </div>
             <div class="list">
-                <img alt="7" src="{categories.mockCategory07.picture}" /> 
+                <img alt="" src="{categories.mockCategory07.picture}" /> 
                 <p>{categories.mockCategory07.name}</p>
             </div>
             <div class="list">
-                <img alt="8" src="{categories.mockCategory08.picture}" /> 
+                <img alt="" src="{categories.mockCategory08.picture}" /> 
                 <p>{categories.mockCategory08.name}</p>
             </div>
         </div>
         <div id="c">
             <div class="list">
-                <img alt="9" src="{categories.mockCategory09.picture}" /> 
+                <img alt="" src="{categories.mockCategory09.picture}" /> 
                 <p>{categories.mockCategory09.name}</p>
             </div>
             <div class="list">
-                <img alt="10" src="{categories.mockCategory10.picture}" /> 
+                <img alt="" src="{categories.mockCategory10.picture}" /> 
                 <p>{categories.mockCategory10.name}</p>
             </div>
             <div class="list">
-                <img alt="11" src="{categories.mockCategory11.picture}" /> 
+                <img alt="" src="{categories.mockCategory11.picture}" /> 
                 <p>{categories.mockCategory11.name}</p>
             </div>
             <div class="list">
-                <img alt="12" src="{categories.mockCategory12.picture}" /> 
+                <img alt="" src="{categories.mockCategory12.picture}" /> 
                 <p>{categories.mockCategory12.name}</p>
             </div>
         </div>
         <div id="d">
             <div class="list">
-                <img alt="13" src="{categories.mockCategory13.picture}" /> 
+                <img alt="" src="{categories.mockCategory13.picture}" /> 
                 <p>{categories.mockCategory13.name}</p>
             </div>
             <div class="list">
-                <img alt="14" src="{categories.mockCategory14.picture}" /> 
+                <img alt="" src="{categories.mockCategory14.picture}" /> 
                 <p>{categories.mockCategory14.name}</p>
             </div>
             <div class="list">
-                <img alt="15" src="{categories.mockCategory15.picture}" /> 
+                <img alt="" src="{categories.mockCategory15.picture}" /> 
                 <p>{categories.mockCategory15.name}</p>
             </div>
             <div class="list">
-                <img alt="16" src="{categories.mockCategory16.picture}" /> 
+                <img alt="" src="{categories.mockCategory16.picture}" /> 
                 <p>{categories.mockCategory16.name}</p>
             </div>
         </div>

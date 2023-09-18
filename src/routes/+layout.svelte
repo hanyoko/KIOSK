@@ -1,7 +1,6 @@
 <script>
     const tableNumber = '12'
 
-    // import lan from '$lib/img/chevron-down.png';
     import call from '$lib/img/notifications_active.png';
     import bill from '$lib/img/receipt.png';
     import cart from '$lib/img/shopping_cart.png';
@@ -21,7 +20,6 @@
             <option value="ja" >にほんご</option>
             <option value="ch" >中國語</option>
         </select>
-        <!-- <img alt="" src={lan} /> -->
     </li> 
     <li class="li call">
         <button style="cursor: pointer;" on:click={handleAlert}>
@@ -41,7 +39,7 @@
     img { vertical-align: middle; border: none; }
     
     #nav{
-        height: 80px;
+        height: 8vh;
         font-size: 27px;
         display: flex;
         justify-content: space-around;
@@ -61,6 +59,8 @@
         margin: 0 15px;
     }
     #nav button {
+        width: 80%;
+        height: 5vh;
         font-size: 27px;
         background: black;
         color: white;

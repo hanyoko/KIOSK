@@ -77,46 +77,46 @@
             <div class="list">
                 <img alt="" src="{products.meatPasta01.picture}" />
                 <p>{products.meatPasta01.name}</p>
-                <p class="price">${products.meatPasta01.price*0.01}</p>
+                <p class="price">${(products.meatPasta01.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta02.picture}" /> 
                 <p>{products.meatPasta02.name}</p>
-                <p class="price">${products.meatPasta02.price*0.01}</p>
+                <p class="price">${(products.meatPasta02.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta03.picture}" /> 
                 <p>{products.meatPasta03.name}</p>
-                <p class="price">${products.meatPasta03.price*0.01}</p>
+                <p class="price">${(products.meatPasta03.price*0.01).toFixed(2)}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.meatPasta04.picture}" /> 
                 <p>{products.meatPasta04.name}</p>
-                <p class="price">${products.meatPasta04.price*0.01}</p>
+                <p class="price">${(products.meatPasta04.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta05.picture}" /> 
                 <p>{products.meatPasta05.name}</p>
-                <p class="price">${products.meatPasta05.price*0.01}</p>
+                <p class="price">${(products.meatPasta05.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta06.picture}" /> 
                 <p>{products.meatPasta06.name}</p>
-                <p class="price">${products.meatPasta06.price*0.01}</p>
+                <p class="price">${(products.meatPasta06.price*0.01).toFixed(2)}</p>
             </div>
         </div>
         <div id="c">
             <div class="list">
                 <img alt="" src="{products.meatPasta07.picture}" /> 
                 <p>{products.meatPasta07.name}</p>
-                <p class="price">${products.meatPasta07.price*0.01}</p>
+                <p class="price">${(products.meatPasta07.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta08.picture}" /> 
                 <p>{products.meatPasta08.name}</p>
-                <p class="price">${products.meatPasta08.price*0.01}</p>
+                <p class="price">${(products.meatPasta08.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
             </div>
@@ -166,12 +166,12 @@
             text-align: center;
             align-items: center;
             width: 29%;
-            height: 360px;
+            height: 400px;
             margin-bottom: 100px;
         }
         .list img {
             width: 100%;
-            height: 300px !important;
+            height: 350px !important;
             border-radius: 10px;
             object-fit: fill;
         }

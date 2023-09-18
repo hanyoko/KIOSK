@@ -48,24 +48,24 @@
             <div class="list">
                 <img alt="" src="{products.wine01.picture}" />
                 <p>{products.wine01.name}</p>
-                <p class="price">${products.wine01.price*0.01}</p>
+                <p class="price">${(products.wine01.price*0.01.toFixed(2))}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine02.picture}" /> 
                 <p>{products.wine02.name}</p>
-                <p class="price">${products.wine02.price*0.01}</p>
+                <p class="price">${(products.wine02.price*0.01.toFixed(2))}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine03.picture}" /> 
                 <p>{products.wine03.name}</p>
-                <p class="price">${products.wine03.price*0.01}</p>
+                <p class="price">${(products.wine03.price*0.01.toFixed(2))}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.wine04.picture}" /> 
                 <p>{products.wine04.name}</p>
-                <p class="price">${products.wine04.price*0.01}</p>
+                <p class="price">${(products.wine04.price*0.01.toFixed(2))}</p>
             </div>
             <div class="list">
             </div>  
@@ -117,12 +117,12 @@
             text-align: center;
             align-items: center;
             width: 29%;
-            height: 360px;
+            height: 400px;
             margin-bottom: 100px;
         }
         .list img {
             width: 100%;
-            height: 300px !important;
+            height: 350px !important;
             border-radius: 10px;
             object-fit: fill;
         }
