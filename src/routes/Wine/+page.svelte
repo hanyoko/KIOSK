@@ -39,37 +39,37 @@
     <div id="main">
         <div id="nav2">
             <a id="back" href="/"><p>←</p></a>
-            <h1 style="font-size: 40px; font-weight: bold; padding: 0 30px;">Wine</h1>
-            <h2 style="padding-right: 30px; font-weight: 500; color: gray;">·</h2>
-            <h2 style="font-weight: 500; color: gray;">Wine</h2>
+            <h1 class="title">Wine</h1>
+            <h2 class="dot">·</h2>
+            <h2 class="subtitle">Wine</h2>
         </div>
 
         <div id="a">
             <div class="list">
                 <img alt="" src="{products.wine01.picture}" />
-                <p>{products.wine01.name}</p>
+                <p class="name">{products.wine01.name}</p>
                 <p class="price">${(products.wine01.price*0.01.toFixed(2))}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine02.picture}" /> 
-                <p>{products.wine02.name}</p>
+                <p class="name">{products.wine02.name}</p>
                 <p class="price">${(products.wine02.price*0.01.toFixed(2))}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.wine03.picture}" /> 
-                <p>{products.wine03.name}</p>
+                <p class="name">{products.wine03.name}</p>
                 <p class="price">${(products.wine03.price*0.01.toFixed(2))}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.wine04.picture}" /> 
-                <p>{products.wine04.name}</p>
+                <p class="name">{products.wine04.name}</p>
                 <p class="price">${(products.wine04.price*0.01.toFixed(2))}</p>
             </div>
-            <div class="list">
+            <div class="list blank">
             </div>  
-            <div class="list">
+            <div class="list blank">
             </div>    
         </div>
     </div>
@@ -97,6 +97,20 @@
             align-items: center;
             border-radius: 5px;
             box-shadow: 2px 2px 2px 2px rgb(228, 226, 226);
+        }
+        #nav2 .title {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 0 30px;
+        }
+        #nav2 .dot {
+            padding-right: 30px;
+            font-weight: 500;
+            color: gray;
+        }
+        #nav2 .subtitle{
+            font-weight: 500;
+            color: gray;
         }
 
         #main {
@@ -133,5 +147,75 @@
         }
         .list .price{
             color: gray;
+        }
+        .list .name {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:1199px) {
+        /* 테블릿 가로 */
+            .list {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width:899px) {
+        /* 모바일 가로, 테블릿 세로 */
+            .list img {
+                height: 400px !important;
+            }
+
+            #nav2 {
+                margin-left: 0;
+            }
+            #nav2 .title {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 0 1rem;
+            }
+            #nav2 .dot {
+                padding-right: 1rem;
+                font-weight: 500;
+                color: gray;
+            }
+            #nav2 .subtitle{
+                font-weight: 500;
+                color: gray;
+            }
+        }
+
+        @media screen and (max-width:599px) {
+        /* 모바일 세로 */
+            #a, #b {
+                flex-direction: column;
+            }
+            .list {
+                width: 100%;
+                height: 400px !important;
+                margin-bottom: 80px;
+            }
+          
+            #nav2 a {
+                width: 70px;
+                font-size: 2rem;
+            }
+            #nav2 .title {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 0 1rem;
+            }
+            #nav2 .dot {
+                font-weight: 500;
+                color: gray;
+            }
+            #nav2 .subtitle{
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: gray;
+            }
+
+            .blank {
+                display: none;
+            }
         }
     </style>

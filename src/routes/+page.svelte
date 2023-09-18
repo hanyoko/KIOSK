@@ -237,11 +237,76 @@ img { vertical-align: middle; border: none; }
         object-fit: cover;
         position: absolute;
         top: -8%;
-        left: 18%;
+        left: 17%;
     }
     .list p {
         margin: 30px 0;
         padding-top: 180px;
         font-size: 30px;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width:1199px) {
+    /* 테블릿 가로 */
+        .list {
+            width: 250px;
+            height: 250px;
+        }
+        .list img {
+            width: 70%;
+            height: 70%;
+            top: -8%;
+            left: 15%;
+        }
+        .list p {
+            padding-top: 150px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (max-width:899px) {
+    /* 모바일 가로, 테블릿 세로 */
+        .list {
+            width: 170px;
+            height: 170px;
+        }
+        .list img {
+            width: 70%;
+            height: 70%;
+            top: -8%;
+            left: 15%;
+        }
+        .list p {
+            margin: 30px 0;
+            padding-top: 90px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (max-width:599px) {
+    /* 모바일 세로 */
+        #a, #b, #c, #d {
+            flex-direction: column;
+        }
+        .list {
+            text-align: center;
+            width: 100%;
+            height: 35vh;
+        }
+        .list img {
+            border-radius: 8%;
+            width: 70%;
+            height: 70%;
+            top: -3%;
+            left: 15%;
+        }
+        .list p {
+            margin: 30px 0;
+            padding-top: 210px;
+            font-size: 30px;
+            font-weight: bold;
+        }
     }
 </style>

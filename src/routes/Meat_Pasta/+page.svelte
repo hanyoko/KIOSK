@@ -68,57 +68,57 @@
     <div id="main">
         <div id="nav2">
             <a id="back" href="/"><p>←</p></a>
-            <h1 style="font-size: 40px; font-weight: bold; padding: 0 30px;">Meat Pasta</h1>
-            <h2 style="padding-right: 30px; font-weight: 500; color: gray;">·</h2>
-            <h2 style="font-weight: 500; color: gray;">Pasta and Fries</h2>
+            <h1 class="title">Meat Pasta</h1>
+            <h2 class="dot">·</h2>
+            <h2 class="subtitle">Pasta and Fries</h2>
         </div>
 
         <div id="a">
             <div class="list">
                 <img alt="" src="{products.meatPasta01.picture}" />
-                <p>{products.meatPasta01.name}</p>
+                <p class="name">{products.meatPasta01.name}</p>
                 <p class="price">${(products.meatPasta01.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta02.picture}" /> 
-                <p>{products.meatPasta02.name}</p>
+                <p class="name">{products.meatPasta02.name}</p>
                 <p class="price">${(products.meatPasta02.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta03.picture}" /> 
-                <p>{products.meatPasta03.name}</p>
+                <p class="name">{products.meatPasta03.name}</p>
                 <p class="price">${(products.meatPasta03.price*0.01).toFixed(2)}</p>
             </div>
         </div>
         <div id="b">
             <div class="list">
                 <img alt="" src="{products.meatPasta04.picture}" /> 
-                <p>{products.meatPasta04.name}</p>
+                <p class="name">{products.meatPasta04.name}</p>
                 <p class="price">${(products.meatPasta04.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta05.picture}" /> 
-                <p>{products.meatPasta05.name}</p>
+                <p class="name">{products.meatPasta05.name}</p>
                 <p class="price">${(products.meatPasta05.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta06.picture}" /> 
-                <p>{products.meatPasta06.name}</p>
+                <p class="name">{products.meatPasta06.name}</p>
                 <p class="price">${(products.meatPasta06.price*0.01).toFixed(2)}</p>
             </div>
         </div>
         <div id="c">
             <div class="list">
                 <img alt="" src="{products.meatPasta07.picture}" /> 
-                <p>{products.meatPasta07.name}</p>
+                <p class="name">{products.meatPasta07.name}</p>
                 <p class="price">${(products.meatPasta07.price*0.01).toFixed(2)}</p>
             </div>
             <div class="list">
                 <img alt="" src="{products.meatPasta08.picture}" /> 
-                <p>{products.meatPasta08.name}</p>
+                <p class="name">{products.meatPasta08.name}</p>
                 <p class="price">${(products.meatPasta08.price*0.01).toFixed(2)}</p>
             </div>
-            <div class="list">
+            <div class="list blank">
             </div>
         </div>
     </div>
@@ -147,6 +147,20 @@
             border-radius: 5px;
             box-shadow: 2px 2px 2px 2px rgb(228, 226, 226);
         }
+        #nav2 .title {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 0 30px;
+        }
+        #nav2 .dot {
+            padding-right: 30px;
+            font-weight: 500;
+            color: gray;
+        }
+        #nav2 .subtitle{
+            font-weight: 500;
+            color: gray;
+        }
 
         #main {
             width: 100%;
@@ -169,6 +183,9 @@
             height: 400px;
             margin-bottom: 100px;
         }
+        .list .name {
+            font-weight: bold;
+        }
         .list img {
             width: 100%;
             height: 350px !important;
@@ -182,5 +199,72 @@
         }
         .list .price{
             color: gray;
+        }
+
+        @media screen and (max-width:1199px) {
+        /* 테블릿 가로 */
+            .list {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width:899px) {
+        /* 모바일 가로, 테블릿 세로 */
+            .list img {
+                height: 400px !important;
+            }
+
+            #nav2 {
+                margin-left: 0;
+            }
+            #nav2 .title {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 0 1rem;
+            }
+            #nav2 .dot {
+                padding-right: 1rem;
+                font-weight: 500;
+                color: gray;
+            }
+            #nav2 .subtitle{
+                font-weight: 500;
+                color: gray;
+            }
+        }
+
+        @media screen and (max-width:599px) {
+        /* 모바일 세로 */
+            #a, #b, #c {
+                flex-direction: column;
+            }
+            .list {
+                width: 100%;
+                height: 400px !important;
+                margin-bottom: 80px;
+            }
+          
+            #nav2 a {
+                width: 70px;
+                font-size: 2rem;
+            }
+            #nav2 .title {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 0 1rem;
+            }
+            #nav2 .dot {
+                font-weight: 500;
+                color: gray;
+            }
+            #nav2 .subtitle{
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: gray;
+            }
+
+            .blank {
+                display: none;
+            }
         }
     </style>
