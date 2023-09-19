@@ -1,3 +1,1 @@
-# KIOSK
-
-[kiosk-koyohan](https://kiosk-koyohan.vercel.app/)
+# [KIOSK-KOYOHAN](https://kiosk-koyohan.vercel.app/)
