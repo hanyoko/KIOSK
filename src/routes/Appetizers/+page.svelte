@@ -49,7 +49,7 @@
 
 <section>
     <div id="main">
-        <div id="nav2">
+        <div id="tit">
             <a href="/"><p>←</p></a>
             <h1 class="title">Appetizer</h1>
             <h2 class="dot">·</h2>
@@ -95,19 +95,19 @@
 </section>
 
 <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; } 
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif, "맑은고딕"; } 
     a { text-decoration: none; color:inherit; }
     img { vertical-align: middle; border: none; }
     h1, h2 { font-weight: normal; }
     
-    #nav2{
+    #tit {
         display: flex;
         text-align: center;
         align-items: center;
         margin-bottom: 30px;
         margin-left: 30px;
     }
-    #nav2 a{
+    #tit a {
         width: 80px;
         height: 50px;
         font-size: 30px;
@@ -117,17 +117,17 @@
         border-radius: 5px;
         box-shadow: 2px 2px 2px 2px rgb(228, 226, 226);
     }
-    #nav2 .title {
+    #tit .title {
         font-size: 40px;
         font-weight: bold;
         padding: 0 30px;
     }
-    #nav2 .dot {
+    #tit .dot {
         padding-right: 30px;
         font-weight: 500;
         color: gray;
     }
-    #nav2 .subtitle{
+    #tit .subtitle {
         font-weight: 500;
         color: gray;
     }
@@ -139,7 +139,7 @@
         display: flex;
         flex-direction: column;
     }
-    #a, #b{
+    #a, #b {
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -167,7 +167,7 @@
     .list .price {
         color: gray;
     }
-    #defaultList{
+    #defaultList {
         position: relative !important;
     }
     .cheese {
@@ -198,20 +198,20 @@
             font-size: 2rem !important;
         }
 
-        #nav2 {
+        #tit {
             margin-left: 0;
         }
-        #nav2 .title {
+        #tit .title {
             font-size: 2rem;
             font-weight: bold;
             padding: 0 1rem;
         }
-        #nav2 .dot {
+        #tit .dot {
             padding-right: 1rem;
             font-weight: 500;
             color: gray;
         }
-        #nav2 .subtitle{
+        #tit .subtitle {
             font-weight: 500;
             color: gray;
         }
@@ -230,25 +230,19 @@
         .cheese {
             font-size: 2.5rem !important;
         }
-        #nav2 a {
+        #tit a {
             width: 70px;
             font-size: 2rem;
         }
-        #nav2 .title {
+        #tit .title {
             font-size: 2rem;
             font-weight: bold;
             padding: 0 1.8rem;
         }
-        #nav2 .dot {
+        #tit .dot {
             font-size: 0;
         }
-        #nav2 .subtitle{
-            font-size: 0;
-        }
-        #nav2 .dot {
-            font-size: 0;
-        }
-        #nav2 .subtitle{
+        #tit .subtitle {
             font-size: 0;
         }
         .list .name {

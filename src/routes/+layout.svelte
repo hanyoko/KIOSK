@@ -34,11 +34,11 @@
 <slot />
 
 <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif, "맑은고딕"; }
     li { list-style: none; }
     img { vertical-align: middle; border: none; }
     
-    #nav{
+    #nav {
         height: 70px;
         font-size: 0;
         display: flex;
@@ -92,7 +92,7 @@
         width: 24%;
         color: gray;
     }
-    #nav .cart .circle{
+    #nav .cart .circle {
         display: inline-block;
         width: 40px;
         height: 40px;
@@ -182,7 +182,7 @@
             width: 18%;
             font-size: 0;
         }
-        #nav .cart .circle{
+        #nav .cart .circle {
             display: none;
         }
         #nav .table {
