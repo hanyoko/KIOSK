@@ -202,9 +202,10 @@
 
 
 <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif, "맑은고딕"; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     a { text-decoration: none; color:inherit; }
     img { vertical-align: middle; border: none; }
+    /* h1, h2, h3, h4, h5, h6 { font-weight: normal; } */
 
     #wrap{
         width: 100%;
@@ -257,7 +258,7 @@
 
     @media screen and (max-width:1199px) {
     /* 테블릿 가로 */
-        #a, #b, #c, #d {
+        #a, #b, #c, #d{
             width: 100%;
             display: flex;
             justify-content: space-around;
